@@ -6,6 +6,7 @@ function CheckoutProduct({id, image, title, price, rating}) {
     const [{basket}, dispatch] = useStateValue();
 
     const removeFromBasket = () => {
+        
         // remove
         dispatch({
             type:"REMOVE_FROM_BASKET",
@@ -23,7 +24,7 @@ function CheckoutProduct({id, image, title, price, rating}) {
                     <small>$</small>
                     <strong>{price}</strong>
                 </p>
-                <div className="checkoutProduct_rating">{Array(rating).fill().map((_,i) => (<p>🌟</p>))}</div>
+                <div className="checkoutProduct_rating">{Array(rating).fill().map((_,i) => (<p>⭐</p>))}</div>
                 <button onClick={removeFromBasket}>Remove Item</button>
             </div>
         </div>

@@ -6,12 +6,35 @@
     max-width: 1500px;
 }
 
-.home_image{
+.carousel{
     width: 100%;
+    margin-bottom: -180px;
     z-index: -1;
-    margin-bottom: -150px;
     mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
 }
+
+.home_image{
+    margin-bottom: -150px;
+    z-index: -1;
+}
+
+.flickity-page-dots{
+    display: none;
+}
+
+
+.flickity-button{
+    background: transparent;
+    width: 50px;
+    height: 50px;
+    margin-top: -100px;
+    color: gray;
+}
+
+.flickity-button:hover{
+    background-color: transparent;
+}
+ 
 
 .home_row{
     display: flex;

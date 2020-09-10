@@ -10,6 +10,7 @@ function Product({id, title,image,price,rating}) {
         dispatch({
             type:'ADD_TO_BASKET',
             item: {
+                key:id,
                 id: id,
                 title:title,
                 image:image,
@@ -20,7 +21,7 @@ function Product({id, title,image,price,rating}) {
     }
 
     return (
-        <div className="product">
+            <div className="product">
             <div className="product_info">
                 <p>{title}</p>
                 <p className="product_price">
@@ -29,7 +30,7 @@ function Product({id, title,image,price,rating}) {
                 </p>
                 <div className="product_rating">
                     {Array(rating).fill().map((_,i) => (
-                        <p>🌟</p>
+                        <p>⭐</p>
                     ))}
                 </div>
 
@@ -38,6 +39,7 @@ function Product({id, title,image,price,rating}) {
 
             <button onClick={addToBasket}>Add to Basket</button>
         </div>
+        
     )
 }
 
