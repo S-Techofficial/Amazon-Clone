@@ -9,26 +9,27 @@
 .carousel{
     width: 100%;
     margin-bottom: -180px;
-    z-index: -1;
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
 }
 
 .home_image{
     margin-bottom: -150px;
     z-index: -1;
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1), transparent 75%);
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1), transparent 75%);
 }
 
-.flickity-page-dots{
+.flickity-page-dots {
     display: none;
 }
 
 
 .flickity-button{
     background: transparent;
-    width: 50px;
-    height: 50px;
-    margin-top: -100px;
-    color: gray;
+    width: 70px;
+    height: 70px;
+    color: black;
+    cursor: pointer;
+    margin-top: -80px;
 }
 
 .flickity-button:hover{
